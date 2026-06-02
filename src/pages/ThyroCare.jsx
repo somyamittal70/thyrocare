@@ -895,7 +895,7 @@ export default function ThyroCare() {
               Book a Test Now <ArrowRight size={18} />
             </a>
             <a
-              href="tel:+911800000000"
+              href="tel:+919870666333"
               className="font-semibold px-10 py-4 rounded-full text-base transition-all duration-200 text-white flex items-center gap-2"
               style={{ border: "2px solid rgba(255,255,255,0.5)" }}
               onMouseEnter={(e) => {
@@ -905,7 +905,7 @@ export default function ThyroCare() {
                 e.currentTarget.style.background = "transparent";
               }}
             >
-              <Phone size={18} /> Call: 1800-000-0000
+              <Phone size={18} /> Call: +91-9870666333
             </a>
           </div>
         </div>
