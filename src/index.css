@@ -1,0 +1,173 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+        
+* { font-family: 'DM Sans', sans-serif; box-sizing: border-box; }
+  .font-display { font-family: 'Cormorant Garamond', serif; }
+
+        :root {
+          --red: #f05f57;
+          --red-dark: #d44840;
+          --navy: #2f3749;
+          --navy-light: #3d4a62;
+          --bg: #f4f6fb;
+          --bg2: #eef0f7;
+          --card: #ffffff;
+          --text: #1e2535;
+          --muted: #6b7592;
+          --border: rgba(47,55,73,0.1);
+        }
+
+        .gradient-text {
+          background: linear-gradient(135deg, #f05f57, #ff8a82);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+        .navy-gradient-text {
+          background: linear-gradient(135deg, #2f3749, #4a5a80);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        .nav-link { position: relative; }
+        .nav-link::after {
+          content: ''; position: absolute; bottom: -2px; left: 0;
+          width: 0; height: 2px; background: #f05f57; transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+
+        .pulse-dot { animation: pulseDot 2s ease-in-out infinite; }
+        @keyframes pulseDot {
+          0%, 100% { box-shadow: 0 0 0 0 rgba(240,95,87,0.5); }
+          50% { box-shadow: 0 0 0 8px rgba(240,95,87,0); }
+        }
+
+        .float-anim { animation: floatUp 4s ease-in-out infinite; }
+        @keyframes floatUp {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-12px); }
+        }
+
+        .reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .reveal.show { opacity: 1; transform: translateY(0); }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+        .reveal-delay-5 { transition-delay: 0.5s; }
+        .reveal-delay-6 { transition-delay: 0.6s; }
+
+        .service-card {
+          transition: transform 0.4s cubic-bezier(0.23,1,0.32,1), box-shadow 0.4s ease;
+          cursor: pointer;
+        }
+        .service-card:hover {
+          transform: translateY(-10px) scale(1.02);
+          box-shadow: 0 30px 80px rgba(47,55,73,0.14);
+        }
+        .service-img {
+          transition: transform 0.6s cubic-bezier(0.23,1,0.32,1);
+          overflow: hidden;
+        }
+        .service-card:hover .service-img img {
+          transform: scale(1.08);
+        }
+        .service-img img { transition: transform 0.6s cubic-bezier(0.23,1,0.32,1); }
+
+        .pkg-card {
+          transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+        .pkg-card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 24px 64px rgba(240,95,87,0.18);
+        }
+
+        .stat-card-anim {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .stat-card-anim:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 16px 48px rgba(47,55,73,0.12);
+        }
+
+        .btn-primary {
+          background: linear-gradient(135deg, #f05f57, #d94e47);
+          color: white;
+          font-weight: 700;
+          border-radius: 999px;
+          padding: 14px 32px;
+          transition: all 0.25s ease;
+          box-shadow: 0 6px 24px rgba(240,95,87,0.35);
+          display: inline-flex; align-items: center; gap: 8px;
+        }
+        .btn-primary:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 12px 36px rgba(240,95,87,0.45);
+        }
+        .btn-outline {
+          border: 2px solid rgb(20, 19, 19);
+          color: rgb(21, 20, 20);
+          font-weight: 600;
+          border-radius: 999px;
+          padding: 12px 32px;
+          transition: all 0.25s ease;
+          display: inline-flex; align-items: center; gap: 8px;
+        }
+        .btn-outline:hover {
+          background: var(--navy);
+          color: white;
+          transform: translateY(-2px);
+        }
+
+        .hero-overlay {
+          background: linear-gradient( rgba(244,246,251,0.05) 80%);
+        }
+      
+        .tag-badge {
+          background: linear-gradient(135deg, rgba(240,95,87,0.12), rgba(240,95,87,0.06));
+          color: #f05f57;
+          border: 1px solid rgba(240,95,87,0.25);
+          font-size: 10px;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          padding: 3px 10px;
+          border-radius: 999px;
+        }
+
+        .shimmer-line {
+          background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+          background-size: 200% 100%;
+          animation: shimLine 2.5s ease infinite;
+        }
+        @keyframes shimLine { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+
+        input, textarea { outline: none; }
+        input:focus, textarea:focus { border-color: #f05f57 !important; }
+
+        .icon-bg {
+          background: linear-gradient(135deg, rgba(240,95,87,0.12), rgba(240,95,87,0.04));
+          border: 1px solid rgba(240,95,87,0.18);
+          color: #f05f57;
+        }
+
+        .glass-card {
+          background: rgba(255,255,255,0.85);
+          backdrop-filter: blur(16px);
+          border: 1px solid rgba(255,255,255,0.9);
+        }
+
+        .hero-decorative {
+          background: radial-gradient(circle at 60% 50%, rgba(240,95,87,0.08) 0%, transparent 70%),
+                      radial-gradient(circle at 80% 20%, rgba(47,55,73,0.06) 0%, transparent 60%);
+        }
+
+        /* Testimonial hover */
+        .testi-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .testi-card:hover { transform: translateY(-6px); box-shadow: 0 20px 56px rgba(47,55,73,0.1); }
+
+        /* Social icon hover */
+        .social-icon { transition: all 0.25s ease; }
+        .social-icon:hover { transform: translateY(-3px) scale(1.1); }
