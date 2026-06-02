@@ -305,7 +305,7 @@ export default function ThyroCare() {
               Health, <span className="gradient-text">Simplified</span>
             </h1>
             <p
-              className="text-lg sm:text-xl leading-relaxed mb-10 max-w-xl"
+              className="text-lg sm:text-xl leading-relaxed mb-10 max-w-xl mx-auto text-center"
               style={{
                 color: "rgba(255,255,255,0.9)",
               }}
@@ -1058,10 +1058,10 @@ export default function ThyroCare() {
             <div className="col-span-1 sm:col-span-2 lg:col-span-1">
               <div className="flex items-center gap-3 mb-4">
                 <img
-                    src="/logo.png"
-                    alt="ThyroCare Logo"
-                    className="w-25 h-10 bg-white rounded-full p-1"
-                  />
+                  src="/logo.png"
+                  alt="ThyroCare Logo"
+                  className="w-25 h-10 bg-white rounded-full p-1"
+                />
               </div>
               <p
                 className="text-sm leading-relaxed mb-5"
