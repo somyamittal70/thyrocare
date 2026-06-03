@@ -130,7 +130,7 @@ const CONTACT_INFO = [
     value: " D-37/1, MIDC, Turbhe, Opp. Sandoz, Navi Mumbai - 400 703",
   },
   { icon: Phone, label: "Phone", value: "+91-9870666333" },
-  { icon: Mail, label: "Email", value: "wellness@thyrocare.com" },
+  { icon: Mail, label: "Email", value: "thyrocarebisrakh@gmail.com" },
 ];
 
 function useInView(threshold = 0.15) {
@@ -992,7 +992,7 @@ export default function ThyroCare() {
                   ))}
                 </div>
                 {[
-                  { lbl: "Email", type: "email", ph: "wellness@thyrocare.com" },
+                  { lbl: "Email", type: "email", ph: "thyrocarebisrakh@gmail.com" },
                   { lbl: "Phone", type: "tel", ph: "+91 9870666333" },
                 ].map(({ lbl, type, ph }) => (
                   <div key={lbl}>
