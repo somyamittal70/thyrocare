@@ -1249,10 +1249,10 @@ export default function ThyroCare() {
             style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}
           >
             <p className="text-sm" style={{ color: "rgba(255,255,255,0.3)" }}>
-              © 2025 ThyroCare Diagnostics Pvt. Ltd. All rights reserved.
+              © 2023 ThyroCare Diagnostics Pvt. Ltd. All rights reserved.
             </p>
             <div className="flex gap-6">
-              {["Privacy Policy", "Terms of Service", "Refund Policy"].map(
+              {["Developed by Debox Technology"].map(
                 (link) => (
                   <a
                     key={link}
